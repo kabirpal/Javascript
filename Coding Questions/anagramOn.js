@@ -10,6 +10,8 @@ var isAnagram = function(s, t) {
         charCount[char] = (charCount[char] || 0) + 1;
     }
 
+    console.log(charCount);
+
     // Subtract character counts based on the second string
     for (let char of t.toLowerCase()) {
         if (!charCount[char]) {
